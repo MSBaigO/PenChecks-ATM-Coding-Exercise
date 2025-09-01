@@ -1,6 +1,6 @@
 ﻿# PenChecks ATM Solution
 
-This solution contains an ATM API, a web client, and a dedicated test project.
+This solution contains an ATM API, a web client app, and an API testing project.
 
 ---
 
