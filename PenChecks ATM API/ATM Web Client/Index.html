@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ATM</h1>
+
+    <div class="form-section">
+        <label for="transaction-type">Operation Type:</label>
+        <select id="transaction-type" onchange="showTransactionForm()">
+            <option value="account-info">Show Account Info</option>
+            <option value="transactions">Show Transactions</option>
+            <option value="deposit">Deposit</option>
+            <option value="withdraw">Withdraw</option>
+            <option value="transfer">Transfer</option>
+        </select>
+    </div>
+
+    <div id="deposit-form" class="form-section hidden">
+        <h2>Deposit</h2>
+        <label for="deposit-account">Account ID:</label>
+        <input type="number" id="deposit-account" value="1"><br><br>
+        <label for="deposit-amount">Amount:</label>
+        <input type="number" id="deposit-amount" value="100"><br><br>
+        <button onclick="deposit()">Deposit</button>
+    </div>
+
+    <div id="withdraw-form" class="form-section">
+        <h2>Withdraw</h2>
+        <label for="withdraw-account">Account ID:</label>
+        <input type="number" id="withdraw-account" value="1"><br><br>
+        <label for="withdraw-amount">Amount:</label>
+        <input type="number" id="withdraw-amount" value="50"><br><br>
+        <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <div id="transfer-form" class="form-section hidden">
+        <h2>Transfer</h2>
+        <label for="transfer-from-account">From Account ID:</label>
+        <input type="number" id="transfer-from-account" value="1"><br><br>
+        <label for="transfer-to-account">To Account ID:</label>
+        <input type="number" id="transfer-to-account" value="2"><br><br>
+        <label for="transfer-amount">Amount:</label>
+        <input type="number" id="transfer-amount" value="200"><br><br>
+        <button onclick="transfer()">Transfer</button>
+    </div>
+
+    <div id="transactions-form" class="form-section hidden">
+        <h2>Show Transactions</h2>
+        <p>Click the button below to view all transaction history.</p>
+        <button onclick="getTransactions()">Show All Transactions</button>
+    </div>
+
+    <div id="account-info-form" class="form-section hidden">
+        <h2>Show Account Info</h2>
+        <label for="account-lookup-id">Account ID:</label>
+        <input type="number" id="account-lookup-id" value="1"><br><br>
+        <button onclick="getAccount()">Get Account Info</button>
+    </div>
+
+    <pre id="output"></pre>
+
+    <script src="atm.js"></script>
+</body>
+</html>
