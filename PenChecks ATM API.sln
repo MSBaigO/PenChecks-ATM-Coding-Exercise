@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PenChecks ATM API", "PenChecks ATM API\PenChecks ATM API.csproj", "{9EAD101D-F027-4ADA-8C3E-CEB71DE95C61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PenChecks_ATM_API.Tests", "PenChecks_ATM_API.Tests\PenChecks_ATM_API.Tests.csproj", "{E2AF197D-ED8C-4A48-AE16-E8C4805720C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PenChecks ATM API.Tests", "PenChecks_ATM_API.Tests\PenChecks ATM API.Tests.csproj", "{E2AF197D-ED8C-4A48-AE16-E8C4805720C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
