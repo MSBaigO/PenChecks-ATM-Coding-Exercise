@@ -59,39 +59,43 @@ To run the unit tests for the API's business logic, use the **Test Explorer**:
 
 ### PenChecks ATM API
 
+```
 PenChecks_ATM_API/
-│── Controllers/
-│ └── ATMController.cs # Handles API requests for ATM operations
+├── Controllers/
+│   └── ATMController.cs           # Handles API requests for ATM operations
 │
-│── Core/
-│ ├── DTOs/
-│ │ ├── ATMRequestDTOs.cs # Data Transfer Objects for incoming requests
-│ │ └── ATMResponseDTOs.cs # Data Transfer Objects for API responses
-│ │
-│ ├── Interfaces/
-│ │ └── IATMService.cs # Service interface definition
-│ │
-│ ├── Models/
-│ │ ├── Account.cs # Represents a bank account
-│ │ └── Transaction.cs # Represents a transaction record
-│ │
-│ └── Services/
-│ └── ATMService.cs # Implements ATM operations logic
+├── Core/
+│   ├── DTOs/
+│   │   ├── ATMRequestDTOs.cs        # Data Transfer Objects for incoming requests
+│   │   └── ATMResponseDTOs.cs       # Data Transfer Objects for API responses
+│   │
+│   ├── Interfaces/
+│   │   └── IATMService.cs           # Service interface definition
+│   │
+│   ├── Models/
+│   │   ├── Account.cs               # Represents a bank account
+│   │   └── Transaction.cs           # Represents a transaction record
+│   │
+│   └── Services/
+│       └── ATMService.cs            # Implements ATM operations logic
 │
-│── appsettings.json # Application configuration
-│── Program.cs # Application entry point
-│── README.md # Documentation
+├── appsettings.json                 # Application configuration
+├── Program.cs                       # Application entry point
+└── README.md                        # Documentation
+```
 
 ### PenChecks ATM API Tests
 
+```
 PenChecks_ATM_API.Tests/
 │── ATMServiceTests.cs # Unit tests for ATM service logic
-
+```
 ### ATM Web Client
 
+```
 ATM Web Client/
 │── index.html # Main entry point for the web client
 │── style.css # Styling for the web client
 │── atm.js # JavaScript logic for ATM operations and UI interactions
-
+```
 ---
